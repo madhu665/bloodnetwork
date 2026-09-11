@@ -1,0 +1,334 @@
+/* =========================================================
+   REGISTER PAGE STYLES
+   ========================================================= */
+
+.register-container {
+  min-height: 85vh;
+  background-color: #fcfcfc;
+  padding: 50px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.register-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background-color: #fff0f0;
+  color: #ed1c24;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.register-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #151515;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.register-title span {
+  color: #ed1c24;
+}
+
+.register-subtitle {
+  color: #666666;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ROLE SELECTION GRID */
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+.role-card {
+  background: #ffffff;
+  border: 2px solid #eeeeee;
+  border-radius: 16px;
+  padding: 30px 24px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffd1d1;
+  box-shadow: 0 12px 30px rgba(237, 28, 36, 0.09);
+}
+
+.role-card.selected {
+  border-color: #ed1c24;
+  background-color: #fffafa;
+}
+
+.role-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: #fff0f0;
+  color: #ed1c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.role-name {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.role-desc {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.role-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ed1c24;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+/* REGISTRATION FORM CARD */
+.form-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.form-role-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-role-tag h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.btn-change-role {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-change-role:hover {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.form-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input-wrapper svg.field-icon {
+  position: absolute;
+  left: 14px;
+  color: #888888;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.form-input-wrapper input,
+.form-input-wrapper select,
+.form-input-wrapper textarea {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px 0 42px;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  font-size: 14.5px;
+  color: #171717;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input-wrapper textarea {
+  height: auto;
+  min-height: 80px;
+  padding: 12px 16px 12px 42px;
+}
+
+.form-input-wrapper input:focus,
+.form-input-wrapper select:focus,
+.form-input-wrapper textarea:focus {
+  outline: none;
+  border-color: #ed1c24;
+  box-shadow: 0 0 0 3px rgba(237, 28, 36, 0.12);
+}
+
+.btn-eye-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #777777;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-eye-toggle:hover {
+  color: #222;
+}
+
+/* CHECKBOX GROUP */
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.5;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #ed1c24;
+}
+
+/* SUBMIT BUTTON */
+.btn-register-submit {
+  width: 100%;
+  height: 52px;
+  background-color: #ed1c24;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 28px;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 20px rgba(237, 28, 36, 0.22);
+}
+
+.btn-register-submit:hover:not(:disabled) {
+  background-color: #c9151b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(237, 28, 36, 0.3);
+}
+
+.btn-register-submit:disabled {
+  background-color: #f17277;
+  cursor: not-allowed;
+}
+
+/* ALERTS */
+.alert-box {
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.alert-error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.alert-success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+@media (max-width: 768px) {
+  .form-card {
+    padding: 24px 18px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+}
